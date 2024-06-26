@@ -27,18 +27,19 @@
 //----------------------------JavaScript Objects---------------------------
 
 //object initialization
-const custom = {} 
-// 1. customer is the object reference
+// const custom = {} 
+// 1. custom is the object reference
 // 2. Within the curly brackets{} object is found
 
 //object value initialization
-const customer = {
-    name: "saman" ,
-    age: 20 ,
-    address: "colombo" ,
-    phone: "0712345678" ,
-    email: "saman.com"
-}
+// const customer = {
+//     name: "saman" ,
+//     age: 20 ,
+//     address: "colombo" ,
+//     phone: "0712345678" ,
+//     email: "saman.com"
+// }
+
 // 1. name, age, address, phone, email are attributes
 // 2. for each attribute values are assign using colon(:)
 // 3. all are let type attributes
@@ -47,3 +48,22 @@ const customer = {
 //      ex:- email: "saman.com",
 // 6. this object is more similar to appear like below
 //      ex:- const customer = {name: "saman", age: 20, address: "colombo", phone: "0712345678", email: "saman.com",}
+
+//----------------------JavaScript Arrays-----------------------------
+
+//array initialization
+const demo = [];
+// 1. customer is the array reference
+// 2. within the square brackets[] array items are found
+
+//setting up items in an array
+const name = [
+    "Kamal",
+    "Amal",
+    "Bimal",
+    "Nimal"
+];
+
+// 1. "Kamal", "Amal", "Bimal", "Nimal" are array items
+// 2. each array 
+
