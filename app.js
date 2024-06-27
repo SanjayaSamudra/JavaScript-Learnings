@@ -3,18 +3,18 @@
 // let isActive = false;
 // let address = undefined;
 
-// console.log(typeof name);
-// console.log(typeof age);
-// console.log(typeof isActive);
-// console.log(typeof address);
+// console.log(typeof name);       type "string"
+// console.log(typeof age);        type "number"
+// console.log(typeof isActive);   type "boolean"
+// console.log(typeof address);    type "undefined"
 
-// //function initialization
+// function initialization
 // function sample() { 
-//     //variable initialization of type var
+//     variable initialization of type var
 //     var age = 12;
-//     //by default word type is var if not defined
+//     by default word type is var if not defined
 //     word = "name";
-//     //variable initialization of type let
+//     variable initialization of type let
 //     let x = "saman";
 // }
 
@@ -138,3 +138,7 @@ while (j<customer.length) {
 }
 
 // Above all gives the same answer, that means will print the elements present in the array which refer customer.
+
+//==============================================================================================================
+
+//-------------------------------Objects inside the array---------------------------
