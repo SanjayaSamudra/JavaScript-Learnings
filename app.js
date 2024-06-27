@@ -82,6 +82,10 @@ customer[2] = "Colombo";
 
 // like this we can initialize items later
 
+// after initialization this look similar to,
+// const customer = ["Sumal", 12, "Colombo"];
+
+
 //===============================================================================================================
 
 //------------------------Calling array items seperately------------------------------
@@ -109,3 +113,28 @@ customer[0] = "Nimal";
 nameArray[0] = "Kithmal";
 
 //================================================================================================================
+
+//-----------------------------Use of loops to print array elements--------------------------------
+
+// Method - 01
+for (let i = 0; i < customer.length; i++) {
+    console.log(customer[i]);
+}
+// Method - 02
+for (let i = 0; i < customer.length; i++) {
+    const element = customer[i];
+    console.log(element);
+}
+// Method - 03
+let i = 0;
+while (i<customer.length) {
+    console.log(customer[i]);
+    i++;
+}
+// Method - 04
+let j = 0;
+while (j<customer.length) {
+    console.log(customer[j++]);
+}
+
+// Above all gives the same answer, that means will print the elements present in the array which refer customer.
