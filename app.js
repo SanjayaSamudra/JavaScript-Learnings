@@ -3,10 +3,10 @@
 // let isActive = false;
 // let address = undefined;
 
-// console.log(typeof name);       type "string"
-// console.log(typeof age);        type "number"
-// console.log(typeof isActive);   type "boolean"
-// console.log(typeof address);    type "undefined"
+// console.log(typeof name);     //  type "string"
+// console.log(typeof age);      //  type "number"
+// console.log(typeof isActive); //  type "boolean"
+// console.log(typeof address);  //  type "undefined"
 
 // function initialization
 // function sample() { 
@@ -33,9 +33,9 @@
 
 //object value initialization
 // const customer = {
-//     name: "saman" ,
+//     name: "Saman" ,
 //     age: 20 ,
-//     address: "colombo" ,
+//     address: "Colombo" ,
 //     phone: "0712345678" ,
 //     email: "saman.com"
 // }
@@ -52,17 +52,17 @@
 //-------------------------------JavaScript Arrays-----------------------------------------
 
 //array initialization
-const demo = [];
+// const demo = [];
 // 1. demo is the array reference
 // 2. within the square brackets[] array items are found
 
 //setting up items in an array
-const nameArray = [
-    "Kamal",
-    "Amal",
-    "Bimal",
-    "Nimal"
-];
+// const nameArray = [
+//     "Kamal",
+//     "Amal",
+//     "Bimal",
+//     "Nimal"
+// ];
 
 // 1. "Kamal", "Amal", "Bimal", "Nimal" are array items
 // 2. each array items are indexing from 0 to arraylength-1
@@ -75,10 +75,10 @@ const nameArray = [
 
 //--------------------Assigning items after the array initialization---------------------------
 
-const customer = []; // array initialization with zero items
-customer[0] = "Sumal";
-customer[1] = 12;
-customer[2] = "Colombo";
+// const customer = []; // array initialization with zero items
+// customer[0] = "Sumal";
+// customer[1] = 12;
+// customer[2] = "Colombo";
 
 // like this we can initialize items later
 
@@ -90,55 +90,100 @@ customer[2] = "Colombo";
 
 //------------------------Calling array items seperately------------------------------
 
-console.log(nameArray[0]); // prints "Kamal"
+// console.log(nameArray[0]); // prints "Kamal"
 // This line of code reads as,
 //          From the reference called "nameArray" grab the data/item in the index 0th position and paste it to console.
 
-console.log(nameArray[1]); // prints "Amal"
-console.log(nameArray[2]); // prints "Bimal"
-console.log(nameArray[3]); // prints "Nimal"
+// console.log(nameArray[1]); // prints "Amal"
+// console.log(nameArray[2]); // prints "Bimal"
+// console.log(nameArray[3]); // prints "Nimal"
 
 //===============================================================================================================
 
 //-------------------------------Getting array items into variables--------------------------------
 
-let firstName = nameArray[0];
+// let firstName = nameArray[0];
 // What happens here is, we are assigning 0th index value of the reference named "nameArray" to the variable called firstName
 
 //================================================================================================================
 
 //---------------------------------Changing the item value after initialization----------------------------
 
-customer[0] = "Nimal";
-nameArray[0] = "Kithmal";
+// customer[0] = "Nimal";
+// nameArray[0] = "Kithmal";
 
 //================================================================================================================
 
 //-----------------------------Use of loops to print array elements--------------------------------
 
 // Method - 01
-for (let i = 0; i < customer.length; i++) {
-    console.log(customer[i]);
-}
+// for (let i = 0; i < customer.length; i++) {
+//     console.log(customer[i]);
+// }
+
 // Method - 02
-for (let i = 0; i < customer.length; i++) {
-    const element = customer[i];
-    console.log(element);
-}
+// for (let i = 0; i < customer.length; i++) {
+//     const element = customer[i];
+//     console.log(element);
+// }
+
 // Method - 03
-let i = 0;
-while (i<customer.length) {
-    console.log(customer[i]);
-    i++;
-}
+// let i = 0;
+// while (i<customer.length) {
+//     console.log(customer[i]);
+//     i++;
+// }
+
 // Method - 04
-let j = 0;
-while (j<customer.length) {
-    console.log(customer[j++]);
-}
+// let j = 0;
+// while (j<customer.length) {
+//     console.log(customer[j++]);
+// }
+
+// Method - 05
+// for (let i = 0; i < customer.length;) {
+//     console.log(customer[i++]);
+// }
 
 // Above all gives the same answer, that means will print the elements present in the array which refer customer.
 
 //==============================================================================================================
 
 //-------------------------------Objects inside the array---------------------------
+
+const customer = [
+    {
+         name: "Saman" ,
+         age: 20 ,
+         address: "Colombo" ,
+         phone: "0712345678" ,
+         email: "saman.com"
+     } ,
+     {
+        name: "Kamal" ,
+        age: 12 ,
+        address: "Panadura" ,
+        phone: "0712345679" ,
+        email: "kamal.com"
+    } ,
+    {
+        name: "Amal" ,
+        age: 43 ,
+        address: "Colombo" ,
+        phone: "0712345673" ,
+        email: "amal.com"
+    }
+];
+
+// Within each curlybrackets{} object is found
+// So any object can be acces with array item accessing method
+
+console.log(customer[0]); // prints the details of the first object
+
+//=============================================================================================================
+
+//------------------------Use of loops to print objects inside the array-------------------------------
+
+for (let i = 0; i < customer.length; i++) {
+    console.log(customer[i]);
+}
