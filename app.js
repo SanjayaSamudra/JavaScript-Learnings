@@ -1,3 +1,31 @@
+//----------------------------JavaScript Comparison Operators---------------------------
+
+let x = 5;
+console.log(x == 8); // prints false
+x == 8; // returns false
+// "==" means equals to, that means we are checking '5 equal to 8' which is false.
+
+console.log(x == 5); // prints true 
+x == 5; // returns true
+
+console.log(x == "5"); // prints true
+x == "5"; // returns true
+// when "==" this sign uses, it only checks the value not the type
+
+x === 8;
+// "===" checks the value with its data type, 
+//that means in order to make this statement true both value and datatype should be equal.
+
+x === 5; // returns true
+console.log(x === 5); // prints true
+
+x === "5"; // returns false
+console.log(x === "5"); // prints false
+// reason :- checks both value and the type,
+//          In this case even-though value was equal, type was not equal result in giving false. 
+
+//==================================================================
+
 // let name = "saman";
 // let age = 12;
 // let isActive = false;
@@ -9,7 +37,7 @@
 // console.log(typeof address);  //  type "undefined"
 
 // function initialization
-// function sample() { 
+// function sample() {
 //     variable initialization of type var
 //     var age = 12;
 //     by default word type is var if not defined
@@ -27,7 +55,7 @@
 //----------------------------JavaScript Objects---------------------------
 
 //object initialization
-// const custom = {} 
+// const custom = {}
 // 1. custom is the object reference
 // 2. Within the curly brackets{} object is found
 
@@ -66,7 +94,7 @@
 
 // 1. "Kamal", "Amal", "Bimal", "Nimal" are array items
 // 2. each array items are indexing from 0 to arraylength-1
-//      ex:- 
+//      ex:-
 //          arraylength = 4
 //          "Kamal" <--- Appear in index 0
 //          "Nimal" <--- Appear in index 3
@@ -151,39 +179,39 @@
 
 //-------------------------------Objects inside the array---------------------------
 
-const customer = [
-    {
-         name: "Saman" ,
-         age: 20 ,
-         address: "Colombo" ,
-         phone: "0712345678" ,
-         email: "saman.com"
-     } ,
-     {
-        name: "Kamal" ,
-        age: 12 ,
-        address: "Panadura" ,
-        phone: "0712345679" ,
-        email: "kamal.com"
-    } ,
-    {
-        name: "Amal" ,
-        age: 43 ,
-        address: "Colombo" ,
-        phone: "0712345673" ,
-        email: "amal.com"
-    }
-];
+// const customer = [
+//     {
+//          name: "Saman" ,
+//          age: 20 ,
+//          address: "Colombo" ,
+//          phone: "0712345678" ,
+//          email: "saman.com"
+//      } ,
+//      {
+//         name: "Kamal" ,
+//         age: 12 ,
+//         address: "Panadura" ,
+//         phone: "0712345679" ,
+//         email: "kamal.com"
+//     } ,
+//     {
+//         name: "Amal" ,
+//         age: 43 ,
+//         address: "Colombo" ,
+//         phone: "0712345673" ,
+//         email: "amal.com"
+//     }
+// ];
 
 // Within each curlybrackets{} object is found
 // So any object can be acces with array item accessing method
 
-console.log(customer[0]); // prints the details of the first object
+// console.log(customer[0]); // prints the details of the first object
 
 //=============================================================================================================
 
 //------------------------Use of loops to print objects inside the array-------------------------------
 
-for (let i = 0; i < customer.length; i++) {
-    console.log(customer[i]);
-}
+// for (let i = 0; i < customer.length; i++) {
+//     console.log(customer[i]);
+// }
