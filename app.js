@@ -75,23 +75,23 @@ console.log(x === "5"); // prints false
 // console.log(age);
 
 // function initialization - method 1
-function run() {
-    console.log("run");
-}
+// function run() {
+//     console.log("run");
+// }
 
 // function initialization - method 2
-let run = function() {
-    console.log("run");
-}
+// let run = function() {
+//     console.log("run");
+// }
 
 // function initialization - method 3 (Using "lambda" expression)
-let run = () => {
-    console.log("run");
-}
+// let run = () => {
+//     console.log("run");
+// }
 
 // function initialization - method 4 (Using "lambda" expression)
 // no curly brackets need when we have one print statement
-let run = () => console.log("run");
+// let run = () => console.log("run");
 
 
 //==========================================================================
@@ -137,13 +137,31 @@ let run = () => console.log("run");
 // 6. this object is more similar to appear like below
 //      ex:- const customer = {name: "saman", age: 20, address: "colombo", phone: "0712345678", email: "saman.com",}
 
-//==================================================================
+//=====================================================================================================
 
-//--------------------Objects with classes--------------------------
+//----------------------------------------Objects with classes-------------------------------------
+// In JavaScript we can make objects without classes. But that doesn't mean that we can't create classes.
 
 class Customer{
-    
+    // Customer(){}
+
+    Customer(name, age, address){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+
+    function setName(name) {
+            this.name=name;
+        }
+    function getName(){
+            return this.name;
+        }
+    }
 }
+
+let customer = new Customer("Amal", 20, "Colombo");
+
+console.log(customer);
 
 //-------------------------------JavaScript Arrays-----------------------------------------
 
@@ -284,9 +302,9 @@ class Customer{
 //     console.log(customer[i]);
 // }
 
-//===================================================================
+//==============================================================================================================
 
-//---------------------Use of Functions with arrays-------------------
+//-----------------------------------Use of Functions with arrays---------------------------------------
 
 // let numbers = [5,8,9,6,10,1,2,3,7,4];
 
@@ -298,9 +316,9 @@ class Customer{
 
 // console.log(words.sort()); // prints ['ama', 'ame', 'jay', 'lol', 'may', 'say', 'tik', 'tok'] 
 
-//=====================================================================
+//=======================================================================================================
 
-//-------------Document manipulation--------------------
+//-----------------------------------Document manipulation (DOM)----------------------------------
 
 document.write("Hello World");
 
@@ -310,6 +328,7 @@ function btnClick() {
     document.getElementById("h1").innerHTML="Supun";
     console.log("Button Clicked");
 }
+// Once button clicked we make it happen to run the function called btnClick()
 
 // function btnHover() {
 //     console.log("Button Hover");
