@@ -60,13 +60,13 @@ console.log(x === "5"); // prints false
 //     let x = "saman";
 // }
 
-let sum = run();
+// let sum = run();
 
-console.log(sum);
+// console.log(sum);
 
-function run() {
-    return 12+20;
-}
+// function run() {
+//     return 12+20;
+// }
 
 // age = 20;
 // console.log(age);
@@ -85,20 +85,20 @@ function run() {
 
 //object value initialization
 
-let customer = {
-    name:"Saman",
-    age:12,
-    address:"Gampaha"
-}
+// let customer = {
+//     name:"Saman",
+//     age:12,
+//     address:"Gampaha"
+// }
 
-let customer2 = {
-    name:"Kamal",
-    age:22,
-    address:"Colombo"
-}
+// let customer2 = {
+//     name:"Kamal",
+//     age:22,
+//     address:"Colombo"
+// }
 
-console.log(customer);
-console.log(customer2);
+// console.log(customer);
+// console.log(customer2);
 
 // const customer = {
 //     name: "Saman" ,
@@ -116,6 +116,14 @@ console.log(customer2);
 //      ex:- email: "saman.com",
 // 6. this object is more similar to appear like below
 //      ex:- const customer = {name: "saman", age: 20, address: "colombo", phone: "0712345678", email: "saman.com",}
+
+//==================================================================
+
+//--------------------Objects with classes--------------------------
+
+class Customer{
+    
+}
 
 //-------------------------------JavaScript Arrays-----------------------------------------
 
@@ -255,3 +263,17 @@ console.log(customer2);
 // for (let i = 0; i < customer.length; i++) {
 //     console.log(customer[i]);
 // }
+
+//===================================================================
+
+//---------------------Use of Functions with arrays-------------------
+
+let numbers = [5,8,9,6,10,1,2,3,7,4];
+
+console.log(numbers.sort()); // prints [1, 10, 2, 3, 4, 5, 6, 7, 8, 9]
+// reason to appear sorted array list as above is,
+// it only checks the first number, that's why 10 comes second. 
+
+let words = ["lol", "ama", "jay", "tik", "tok", "may", "say", "ame"];
+
+console.log(words.sort()); // prints ['ama', 'ame', 'jay', 'lol', 'may', 'say', 'tik', 'tok'] 
