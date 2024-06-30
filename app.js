@@ -145,23 +145,37 @@ console.log(x === "5"); // prints false
 class Customer{
     // Customer(){}
 
-    Customer(name, age, address){
+    constructor(name, age, address){
         this.name = name;
         this.age = age;
         this.address = address;
+    }
+    // function setName(name) {
+    //         this.name=name;
+    // }
+    // function getName(){
+    //         return this.name;
+    // }
 
-    function setName(name) {
-            this.name=name;
-        }
-    function getName(){
-            return this.name;
-        }
+    setName(name) {
+        this.name=name;
+    }
+    getName(){
+        return this.name;
     }
 }
 
 let customer = new Customer("Amal", 20, "Colombo");
+console.log(customer.getName()); // prints the name of the pass out one from above line. prints "Amal"
 
-console.log(customer);
+
+customer.setName("Kamal"); // Update name to new name "Kamal"
+console.log(customer.getName()); // prints "Kamal"
+
+console.log(customer.getName(customer.setName("Kumudu"))); // Above update and call out within single statement. prints "Kumudu"
+// From this we can identify inner function runs first, then outer function. 
+// But there's a hidden case, that is getName() is parameterless function but we have given one. Let's see later how it works.
+
 
 //-------------------------------JavaScript Arrays-----------------------------------------
 
