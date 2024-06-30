@@ -268,12 +268,35 @@ class Customer{
 
 //---------------------Use of Functions with arrays-------------------
 
-let numbers = [5,8,9,6,10,1,2,3,7,4];
+// let numbers = [5,8,9,6,10,1,2,3,7,4];
 
-console.log(numbers.sort()); // prints [1, 10, 2, 3, 4, 5, 6, 7, 8, 9]
+// console.log(numbers.sort()); // prints [1, 10, 2, 3, 4, 5, 6, 7, 8, 9]
 // reason to appear sorted array list as above is,
 // it only checks the first number, that's why 10 comes second. 
 
-let words = ["lol", "ama", "jay", "tik", "tok", "may", "say", "ame"];
+// let words = ["lol", "ama", "jay", "tik", "tok", "may", "say", "ame"];
 
-console.log(words.sort()); // prints ['ama', 'ame', 'jay', 'lol', 'may', 'say', 'tik', 'tok'] 
+// console.log(words.sort()); // prints ['ama', 'ame', 'jay', 'lol', 'may', 'say', 'tik', 'tok'] 
+
+//=====================================================================
+
+//-------------Document manipulation--------------------
+
+document.write("Hello World");
+
+document.getElementById("h1").innerHTML="Hello"; // change of HTML document h1 header into name called "Hello"
+
+function btnClick() {
+    document.getElementById("h1").innerHTML="Supun";
+    console.log("Button Clicked");
+}
+
+function btnHover() {
+    console.log("Button Hover");
+}
+
+function btnWheel() {
+    console.log("Mouse Wheeled");
+}
+
+// These all functions are given to the submit button to see how various effect that happen on button 
