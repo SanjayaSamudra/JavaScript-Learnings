@@ -74,6 +74,26 @@ console.log(x === "5"); // prints false
 // age = 50;
 // console.log(age);
 
+// function initialization - method 1
+function run() {
+    console.log("run");
+}
+
+// function initialization - method 2
+let run = function() {
+    console.log("run");
+}
+
+// function initialization - method 3 (Using "lambda" expression)
+let run = () => {
+    console.log("run");
+}
+
+// function initialization - method 4 (Using "lambda" expression)
+// no curly brackets need when we have one print statement
+let run = () => console.log("run");
+
+
 //==========================================================================
 
 //----------------------------JavaScript Objects---------------------------
@@ -291,12 +311,13 @@ function btnClick() {
     console.log("Button Clicked");
 }
 
-function btnHover() {
-    console.log("Button Hover");
-}
+// function btnHover() {
+//     console.log("Button Hover");
+// }
 
-function btnWheel() {
-    console.log("Mouse Wheeled");
-}
+// function btnWheel() {
+//     console.log("Mouse Wheeled");
+// }
 
 // These all functions are given to the submit button to see how various effect that happen on button 
+
