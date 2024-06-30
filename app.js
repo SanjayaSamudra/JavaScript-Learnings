@@ -26,6 +26,15 @@ console.log(x === "5"); // prints false
 
 //==================================================================
 
+//---------------------Variable Handling-----------------------
+// # In JavaScript variable type is dynamic
+// Ex:-  let name = "saman"; // give type string
+//       let name = 12;      // give type integer
+//       let name = true;    // give type boolean
+// This means that, for same variable we can assign different data of different types.
+
+// To avoid that happening "TypeScript" came into play.
+
 // let name = "saman";
 // let age = 12;
 // let isActive = false;
@@ -36,7 +45,12 @@ console.log(x === "5"); // prints false
 // console.log(typeof isActive); //  type "boolean"
 // console.log(typeof address);  //  type "undefined"
 
+//==========================================================================
+
+//----------------------Function Initialization & Handling------------------------------
+
 // function initialization
+
 // function sample() {
 //     variable initialization of type var
 //     var age = 12;
@@ -46,11 +60,21 @@ console.log(x === "5"); // prints false
 //     let x = "saman";
 // }
 
+let sum = run();
+
+console.log(sum);
+
+function run() {
+    return 12+20;
+}
+
 // age = 20;
 // console.log(age);
 
 // age = 50;
 // console.log(age);
+
+//==========================================================================
 
 //----------------------------JavaScript Objects---------------------------
 
@@ -60,6 +84,22 @@ console.log(x === "5"); // prints false
 // 2. Within the curly brackets{} object is found
 
 //object value initialization
+
+let customer = {
+    name:"Saman",
+    age:12,
+    address:"Gampaha"
+}
+
+let customer2 = {
+    name:"Kamal",
+    age:22,
+    address:"Colombo"
+}
+
+console.log(customer);
+console.log(customer2);
+
 // const customer = {
 //     name: "Saman" ,
 //     age: 20 ,
