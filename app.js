@@ -143,7 +143,7 @@ console.log(x === "5"); // prints false
 // In JavaScript we can make objects without classes. But that doesn't mean that we can't create classes.
 
 class Customer{
-    // Customer(){}
+    // Customer(){} // Default constructor
 
     constructor(name, age, address){
         this.name = name;
@@ -183,6 +183,9 @@ console.log(customer.getName(customer.setName("Kumudu"))); // Above update and c
 // From this we can identify inner function runs first, then outer function. 
 // But there's a hidden case, that is getName() is parameterless function but we have given one. Let's see later how it works.
 
+console.log(customer);
+
+//=====================================================================================================
 
 //-------------------------------JavaScript Arrays-----------------------------------------
 
@@ -206,9 +209,14 @@ console.log(customer.getName(customer.setName("Kumudu"))); // Above update and c
 //          "Kamal" <--- Appear in index 0
 //          "Nimal" <--- Appear in index 3
 
+const array = []; // array initialization
+console.log(array); // Gives array
+
+console.log(typeof array); // Gives type as "object"
+
 //===============================================================================================================
 
-//--------------------Assigning items after the array initialization---------------------------
+//---------------------------Assigning items after the array initialization---------------------------
 
 // const customer = []; // array initialization with zero items
 // customer[0] = "Sumal";
@@ -314,6 +322,39 @@ console.log(customer.getName(customer.setName("Kumudu"))); // Above update and c
 // So any object can be acces with array item accessing method
 
 // console.log(customer[0]); // prints the details of the first object
+
+let customers = [
+    {
+        name:"saman",
+        age:"12"
+    },
+    {
+        name:"kamal",
+        age:"20"
+    },
+    {
+        name:"vimal",
+        age:"32"
+    },
+    {
+        name:"nimal",
+        age:"15"
+    },
+    {
+        name:"sunil",
+        age:"50",
+        address:"gampaha"
+    },
+    {
+        name:"ranil",
+        age:"30"
+    }
+]
+
+// Method to print all the data (this instance, objects) inside the array.
+for (let i = 0; i < customers.length; i++) {
+    console.log(customers[i]); 
+}
 
 //=============================================================================================================
 
