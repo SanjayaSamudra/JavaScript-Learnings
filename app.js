@@ -356,6 +356,16 @@ for (let i = 0; i < customers.length; i++) {
     console.log(customers[i]); 
 }
 
+// Method to print names in each object in an array.
+for (let i = 0 ; i < customers.length ; i++ ){
+    console.log(customers[i].name);
+}
+
+// Method to print names with age in each object in an array.
+for (let i = 0; i < customers.length; i++) {
+    console.log(customers[i].name+" "+customers[i].age); 
+}
+
 //=============================================================================================================
 
 //------------------------Use of loops to print objects inside the array-------------------------------
