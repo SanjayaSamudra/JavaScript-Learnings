@@ -323,48 +323,48 @@ console.log(typeof array); // Gives type as "object"
 
 // console.log(customer[0]); // prints the details of the first object
 
-let customers = [
-    {
-        name:"saman",
-        age:"12"
-    },
-    {
-        name:"kamal",
-        age:"20"
-    },
-    {
-        name:"vimal",
-        age:"32"
-    },
-    {
-        name:"nimal",
-        age:"15"
-    },
-    {
-        name:"sunil",
-        age:"50",
-        address:"gampaha"
-    },
-    {
-        name:"ranil",
-        age:"30"
-    }
-]
+// let customers = [
+//     {
+//         name:"saman",
+//         age:"12"
+//     },
+//     {
+//         name:"kamal",
+//         age:"20"
+//     },
+//     {
+//         name:"vimal",
+//         age:"32"
+//     },
+//     {
+//         name:"nimal",
+//         age:"15"
+//     },
+//     {
+//         name:"sunil",
+//         age:"50",
+//         address:"gampaha"
+//     },
+//     {
+//         name:"ranil",
+//         age:"30"
+//     }
+// ]
 
 // Method to print all the data (this instance, objects) inside the array.
-for (let i = 0; i < customers.length; i++) {
-    console.log(customers[i]); 
-}
+// for (let i = 0; i < customers.length; i++) {
+//     console.log(customers[i]); 
+// }
 
 // Method to print names in each object in an array.
-for (let i = 0 ; i < customers.length ; i++ ){
-    console.log(customers[i].name);
-}
+// for (let i = 0 ; i < customers.length ; i++ ){
+//     console.log(customers[i].name);
+// }
 
 // Method to print names with age in each object in an array.
-for (let i = 0; i < customers.length; i++) {
-    console.log(customers[i].name+" "+customers[i].age); 
-}
+// for (let i = 0; i < customers.length; i++) {
+//     console.log(customers[i].name+" "+customers[i].age); 
+// }
 
 //=============================================================================================================
 
@@ -376,7 +376,7 @@ for (let i = 0; i < customers.length; i++) {
 
 //==============================================================================================================
 
-//-----------------------------------Use of Functions with arrays---------------------------------------
+//-----------------------------------Use of pre defined functions with arrays---------------------------------------
 
 // let numbers = [5,8,9,6,10,1,2,3,7,4];
 
@@ -387,6 +387,24 @@ for (let i = 0; i < customers.length; i++) {
 // let words = ["lol", "ama", "jay", "tik", "tok", "may", "say", "ame"];
 
 // console.log(words.sort()); // prints ['ama', 'ame', 'jay', 'lol', 'may', 'say', 'tik', 'tok'] 
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+numbers.push(10); // putting a value at the end of the array.
+console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+numbers.pop(); // removing a value at the end of the array.
+console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+numbers.pop(); // removing a value at the end of the array.
+console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8]
+
+// passing a object inside the array named as "numbers" 
+numbers.push({
+    name : "Sam",
+    age : 12
+})
+console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8, {…}]. Thus {...} refers to object, upon clicking {name: 'Sam', age: 12} will appear.
 
 //=======================================================================================================
 
@@ -410,5 +428,5 @@ function btnClick() {
 //     console.log("Mouse Wheeled");
 // }
 
-// These all functions are given to the submit button to see how various effect that happen on button 
+
 
