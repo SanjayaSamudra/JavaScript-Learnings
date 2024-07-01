@@ -1,28 +1,28 @@
 //----------------------------JavaScript Comparison Operators---------------------------
 
-let x = 5;
-console.log(x == 8); // prints false
-x == 8; // returns false
-// "==" means equals to, that means we are checking '5 equal to 8' which is false.
+// let x = 5;
+// console.log(x == 8); // prints false
+// x == 8; // returns false
+// // "==" means equals to, that means we are checking '5 equal to 8' which is false.
 
-console.log(x == 5); // prints true 
-x == 5; // returns true
+// console.log(x == 5); // prints true 
+// x == 5; // returns true
 
-console.log(x == "5"); // prints true
-x == "5"; // returns true
-// when "==" this sign uses, it only checks the value not the type
+// console.log(x == "5"); // prints true
+// x == "5"; // returns true
+// // when "==" this sign uses, it only checks the value not the type
 
-x === 8;
-// "===" checks the value with its data type, 
-//that means in order to make this statement true both value and datatype should be equal.
+// x === 8;
+// // "===" checks the value with its data type, 
+// //that means in order to make this statement true both value and datatype should be equal.
 
-x === 5; // returns true
-console.log(x === 5); // prints true
+// x === 5; // returns true
+// console.log(x === 5); // prints true
 
-x === "5"; // returns false
-console.log(x === "5"); // prints false
-// reason :- checks both value and the type,
-//          In this case even-though value was equal, type was not equal result in giving false. 
+// x === "5"; // returns false
+// console.log(x === "5"); // prints false
+// // reason :- checks both value and the type,
+// //          In this case even-though value was equal, type was not equal result in giving false. 
 
 //==================================================================
 
@@ -142,48 +142,48 @@ console.log(x === "5"); // prints false
 //----------------------------------------Objects with classes-------------------------------------
 // In JavaScript we can make objects without classes. But that doesn't mean that we can't create classes.
 
-class Customer{
-    // Customer(){} // Default constructor
+// class Customer{
+//     // Customer(){} // Default constructor
 
-    constructor(name, age, address){
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
-// When you work with constructors, its enough to begin as constructor() as above.
-// Same name as class name is no need for constructor.
+//     constructor(name, age, address){
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//     }
+// // When you work with constructors, its enough to begin as constructor() as above.
+// // Same name as class name is no need for constructor.
 
-    // function setName(name) {
-    //         this.name=name;
-    // }
-    // function getName(){
-    //         return this.name;
-    // }
+//     // function setName(name) {
+//     //         this.name=name;
+//     // }
+//     // function getName(){
+//     //         return this.name;
+//     // }
 
-// When creating functions inside the constructor it is not need to mention function infront of function name.
-// See below
+// // When creating functions inside the constructor it is not need to mention function infront of function name.
+// // See below
 
-    setName(name) {
-        this.name=name;
-    }
-    getName(){
-        return this.name;
-    }
-}
-// Correct way of writing functions inside the constructor.
+//     setName(name) {
+//         this.name=name;
+//     }
+//     getName(){
+//         return this.name;
+//     }
+// }
+// // Correct way of writing functions inside the constructor.
 
-let customer = new Customer("Amal", 20, "Colombo");
-console.log(customer.getName()); // prints the name of the pass out one from above line. prints "Amal"
+// let customer = new Customer("Amal", 20, "Colombo");
+// console.log(customer.getName()); // prints the name of the pass out one from above line. prints "Amal"
 
 
-customer.setName("Kamal"); // Update name to new name "Kamal"
-console.log(customer.getName()); // prints "Kamal"
+// customer.setName("Kamal"); // Update name to new name "Kamal"
+// console.log(customer.getName()); // prints "Kamal"
 
-console.log(customer.getName(customer.setName("Kumudu"))); // Above update and call out within single statement. prints "Kumudu"
-// From this we can identify inner function runs first, then outer function. 
-// But there's a hidden case, that is getName() is parameterless function but we have given one. Let's see later how it works.
+// console.log(customer.getName(customer.setName("Kumudu"))); // Above update and call out within single statement. prints "Kumudu"
+// // From this we can identify inner function runs first, then outer function. 
+// // But there's a hidden case, that is getName() is parameterless function but we have given one. Let's see later how it works.
 
-console.log(customer);
+// console.log(customer);
 
 //=====================================================================================================
 
@@ -209,10 +209,10 @@ console.log(customer);
 //          "Kamal" <--- Appear in index 0
 //          "Nimal" <--- Appear in index 3
 
-const array = []; // array initialization
-console.log(array); // Gives array
+// const array = []; // array initialization
+// console.log(array); // Gives array
 
-console.log(typeof array); // Gives type as "object"
+// console.log(typeof array); // Gives type as "object"
 
 //===============================================================================================================
 
@@ -388,35 +388,37 @@ console.log(typeof array); // Gives type as "object"
 
 // console.log(words.sort()); // prints ['ama', 'ame', 'jay', 'lol', 'may', 'say', 'tik', 'tok'] 
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-numbers.push(10); // putting a value at the end of the array.
-console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// numbers.push(10); // putting a value at the end of the array.
+// console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-numbers.pop(); // removing a value at the end of the array.
-console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// numbers.pop(); // removing a value at the end of the array.
+// console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-numbers.pop(); // removing a value at the end of the array.
-console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8]
+// numbers.pop(); // removing a value at the end of the array.
+// console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8]
 
-// passing a object inside the array named as "numbers" 
-numbers.push({
-    name : "Sam",
-    age : 12
-})
-console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8, {…}]. Thus {...} refers to object, upon clicking {name: 'Sam', age: 12} will appear.
+// // passing a object inside the array named as "numbers" 
+// numbers.push({
+//     name : "Sam",
+//     age : 12
+// })
+// console.log(numbers); // prints [1, 2, 3, 4, 5, 6, 7, 8, {…}]. Thus {...} refers to object, upon clicking {name: 'Sam', age: 12} will appear.
 
 //=======================================================================================================
 
 //-----------------------------------Document manipulation (DOM)----------------------------------
 
-document.write("Hello World");
+// document.write("Hello World");
 
 document.getElementById("h1").innerHTML="Hello"; // change of HTML document h1 header into name called "Hello"
 
 function btnClick() {
-    document.getElementById("h1").innerHTML="Supun";
-    console.log("Button Clicked");
+    document.getElementById("h1").innerHTML="Sanjaya";
+    addCustomer();
+    loadTable();
+    // console.log("Button Clicked");
 }
 // Once button clicked we make it happen to run the function called btnClick()
 
@@ -428,5 +430,74 @@ function btnClick() {
 //     console.log("Mouse Wheeled");
 // }
 
+function addCustomer(){
+    let name =  document.getElementById("txtName").value;
+    let age =  document.getElementById("txtAge").value;
+    let address =  document.getElementById("txtAddress").value;
+ 
+    console.log(name+"|"+age+"|"+address);
+ 
+    customers.push({
+     name,
+     age,
+     address
+    })
+ }
 
+let customers = [
+    {
+        name:"saman",
+        age:"12",
+        address:"kurunegala"
+    },
+    {
+        name:"kamal",
+        age:"20",
+        address:"panadura"
+    },
+    {
+        name:"vimal",
+        age:"32",
+        address:"kurunegala"
+    },
+    {
+        name:"nimal",
+        age:"15",
+        address:"nuwara"
+    },
+    {
+        name:"sunil",
+        age:"50",
+        address:"gampaha"
+    },
+    {
+        name:"ranil",
+        age:"30",
+        address:"mathara"
+    }
+]
+
+function loadTable(){
+    let tblCustomers = document.getElementById("tblCustomers");
+
+    let tabelBody =`
+        <tr>
+            <th>Name</th>
+            <th>age</th>
+            <th>Address</th>
+        </tr>
+                `
+    
+    
+    customers.forEach(data =>{
+        tabelBody += `<tr> 
+                        <td>${data.name}</td>
+                        <td>${data.age}</td>
+                        <td>${data.address}</td>
+                    </tr>`
+    });
+
+    console.log(tabelBody);
+    tblCustomers.innerHTML=tabelBody;
+}
 
