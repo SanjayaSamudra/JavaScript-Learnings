@@ -430,13 +430,15 @@ function btnClick() {
 //     console.log("Mouse Wheeled");
 // }
 
+// function that runs when button was clicked
 function addCustomer(){
-    let name =  document.getElementById("txtName").value;
-    let age =  document.getElementById("txtAge").value;
-    let address =  document.getElementById("txtAddress").value;
+    let name =  document.getElementById("txtName").value; // get value of the input text
+    let age =  document.getElementById("txtAge").value; // get value of the input text
+    let address =  document.getElementById("txtAddress").value; // get value of the input text
  
-    console.log(name+"|"+age+"|"+address);
+    console.log(name+"|"+age+"|"+address); // printing the values that got
  
+// pushing a new object
     customers.push({
      name,
      age,
@@ -477,6 +479,7 @@ let customers = [
     }
 ]
 
+// method to load data into table
 function loadTable(){
     let tblCustomers = document.getElementById("tblCustomers");
 
@@ -488,7 +491,8 @@ function loadTable(){
         </tr>
                 `
     
-    
+    // use of for-each loop with lambda expression to print data into table
+    // easiest way to iterate is table raw.
     customers.forEach(data =>{
         tabelBody += `<tr> 
                         <td>${data.name}</td>
