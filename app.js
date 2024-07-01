@@ -150,12 +150,18 @@ class Customer{
         this.age = age;
         this.address = address;
     }
+// When you work with constructors, its enough to begin as constructor() as above.
+// Same name as class name is no need for constructor.
+
     // function setName(name) {
     //         this.name=name;
     // }
     // function getName(){
     //         return this.name;
     // }
+
+// When creating functions inside the constructor it is not need to mention function infront of function name.
+// See below
 
     setName(name) {
         this.name=name;
@@ -164,6 +170,7 @@ class Customer{
         return this.name;
     }
 }
+// Correct way of writing functions inside the constructor.
 
 let customer = new Customer("Amal", 20, "Colombo");
 console.log(customer.getName()); // prints the name of the pass out one from above line. prints "Amal"
