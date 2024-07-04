@@ -483,6 +483,7 @@ let customers = [
 function loadTable(){
     let tblCustomers = document.getElementById("tblCustomers");
 
+// Making table columns visible
     let tabelBody =`
         <tr>
             <th>Name</th>
@@ -493,6 +494,8 @@ function loadTable(){
     
     // use of for-each loop with lambda expression to print data into table
     // easiest way to iterate is table raw.
+
+    // Use of lambda expression
     customers.forEach(data =>{
         tabelBody += `<tr> 
                         <td>${data.name}</td>
