@@ -505,3 +505,30 @@ function loadTable(){
     tblCustomers.innerHTML=tabelBody;
 }
 
+//=================================================================================================================
+
+//----------------------------------------Synchronous-----------------------------------------------
+
+// step by step process. After 1, 2, 3, 4, 5 printed out only, for loop executed, then after 6, 7, 8, 9 printed.
+
+console.log("1");
+console.log("2");
+console.log("3");
+console.log("4");
+console.log("5");
+
+for (let i = 0; i < 10 ; i++){
+    console.log(i);
+}
+
+console.log("6");
+console.log("7");
+console.log("8");
+console.log("9");
+
+
+
+
+
+
+
