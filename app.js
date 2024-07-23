@@ -412,126 +412,147 @@
 
 // document.write("Hello World");
 
-document.getElementById("h1").innerHTML="Hello"; // change of HTML document h1 header into name called "Hello"
+// document.getElementById("h1").innerHTML="Hello"; // change of HTML document h1 header into name called "Hello"
 
-function btnClick() {
-    document.getElementById("h1").innerHTML="Sanjaya";
-    addCustomer();
-    loadTable();
-    // console.log("Button Clicked");
-}
-// Once button clicked we make it happen to run the function called btnClick()
-
-// function btnHover() {
-//     console.log("Button Hover");
+// function btnClick() {
+//     document.getElementById("h1").innerHTML="Sanjaya";
+//     addCustomer();
+//     loadTable();
+//     // console.log("Button Clicked");
 // }
+// // Once button clicked we make it happen to run the function called btnClick()
 
-// function btnWheel() {
-//     console.log("Mouse Wheeled");
-// }
+// // function btnHover() {
+// //     console.log("Button Hover");
+// // }
 
-// function that runs when button was clicked
-function addCustomer(){
-    let name =  document.getElementById("txtName").value; // get value of the input text
-    let age =  document.getElementById("txtAge").value; // get value of the input text
-    let address =  document.getElementById("txtAddress").value; // get value of the input text
+// // function btnWheel() {
+// //     console.log("Mouse Wheeled");
+// // }
+
+// // function that runs when button was clicked
+
+// function addCustomer(){
+//     let name =  document.getElementById("txtName").value; // get value of the input text
+//     let age =  document.getElementById("txtAge").value; // get value of the input text
+//     let address =  document.getElementById("txtAddress").value; // get value of the input text
  
-    console.log(name+"|"+age+"|"+address); // printing the values that got
+//     console.log(name+"|"+age+"|"+address); // printing the values that got
  
-// pushing a new object
-    customers.push({
-     name,
-     age,
-     address
-    })
- }
+// // pushing a new object
+//     customers.push({
+//      name,
+//      age,
+//      address
+//     })
+//  }
 
-let customers = [
-    {
-        name:"saman",
-        age:"12",
-        address:"kurunegala"
-    },
-    {
-        name:"kamal",
-        age:"20",
-        address:"panadura"
-    },
-    {
-        name:"vimal",
-        age:"32",
-        address:"kurunegala"
-    },
-    {
-        name:"nimal",
-        age:"15",
-        address:"nuwara"
-    },
-    {
-        name:"sunil",
-        age:"50",
-        address:"gampaha"
-    },
-    {
-        name:"ranil",
-        age:"30",
-        address:"mathara"
-    }
-]
+// let customers = [
+//     {
+//         name:"saman",
+//         age:"12",
+//         address:"kurunegala"
+//     },
+//     {
+//         name:"kamal",
+//         age:"20",
+//         address:"panadura"
+//     },
+//     {
+//         name:"vimal",
+//         age:"32",
+//         address:"kurunegala"
+//     },
+//     {
+//         name:"nimal",
+//         age:"15",
+//         address:"nuwara"
+//     },
+//     {
+//         name:"sunil",
+//         age:"50",
+//         address:"gampaha"
+//     },
+//     {
+//         name:"ranil",
+//         age:"30",
+//         address:"mathara"
+//     }
+// ]
 
-// method to load data into table
-function loadTable(){
-    let tblCustomers = document.getElementById("tblCustomers");
+// // method to load data into table
+// function loadTable(){
+//     let tblCustomers = document.getElementById("tblCustomers");
 
-// Making table columns visible
-    let tabelBody =`
-        <tr>
-            <th>Name</th>
-            <th>age</th>
-            <th>Address</th>
-        </tr>
-                `
+// // Making table columns visible
+//     let tabelBody =`
+//         <tr>
+//             <th>Name</th>
+//             <th>age</th>
+//             <th>Address</th>
+//         </tr>
+//                 `
     
-    // use of for-each loop with lambda expression to print data into table
-    // easiest way to iterate is table raw.
+//     // use of for-each loop with lambda expression to print data into table
+//     // easiest way to iterate is table raw.
 
-    // Use of lambda expression
-    customers.forEach(data =>{
-        tabelBody += `<tr> 
-                        <td>${data.name}</td>
-                        <td>${data.age}</td>
-                        <td>${data.address}</td>
-                    </tr>`
-    });
+//     // Use of lambda expression
+//     customers.forEach(data =>{
+//         tabelBody += `<tr> 
+//                         <td>${data.name}</td>
+//                         <td>${data.age}</td>
+//                         <td>${data.address}</td>
+//                     </tr>`
+//     });
 
-    console.log(tabelBody);
-    tblCustomers.innerHTML=tabelBody;
-}
+//     console.log(tabelBody);
+//     tblCustomers.innerHTML=tabelBody;
+// }
+
+// //=================================================================================================================
+
+// //----------------------------------------Synchronous-----------------------------------------------
+
+// // step by step process. After 1, 2, 3, 4, 5 printed out only, for loop executed, then after 6, 7, 8, 9 printed.
+
+// console.log("1");
+// console.log("2");
+// console.log("3");
+// console.log("4");
+// console.log("5");
+
+// for (let i = 0; i < 10 ; i++){
+//     console.log(i);
+// }
+
+// console.log("6");
+// console.log("7");
+// console.log("8");
+// console.log("9");
 
 //=================================================================================================================
 
-//----------------------------------------Synchronous-----------------------------------------------
+//------------------------------Call Back Hell (Visually execute from top to bottom)-------------------------------
 
-// step by step process. After 1, 2, 3, 4, 5 printed out only, for loop executed, then after 6, 7, 8, 9 printed.
+// Simple program to goto shop and buy goods.
 
-console.log("1");
-console.log("2");
-console.log("3");
-console.log("4");
-console.log("5");
+setTimeout(() => {
+    console.log("Getting ready...");
+    setTimeout(() => {
+        console.log("Requesting money from father/mother...");
+        setTimeout(() => {
+           console.log("Going to the market..."); 
+           setTimeout(() => {
+                console.log("Buying goods from the market...");
+                setTimeout(() => {
+                   console.log("Return Home"); 
+                }, 8000);
+           }, 5000);
+        }, 3000);
+    }, 1000);
+}, 2000);
 
-for (let i = 0; i < 10 ; i++){
-    console.log(i);
-}
-
-console.log("6");
-console.log("7");
-console.log("8");
-console.log("9");
-
-
-
-
+// This is basic call regarding above scenario. It can be more complex than mention here.
 
 
 
